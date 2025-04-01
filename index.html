@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BIOTA</title>
+  <meta name="description"
+    content="BIOTA - Breakchain of the web. A comprehensive suite of tools designed to make you indispensable while empowering you to write code that's absolute slop - quite literally.">
+  <meta name="keywords" content="BIOTA,  VSCode, Extension, Developer Tools">
+  <meta name="author" content="whirlxd">
+  <meta property="og:title" content="BIOTA - Breakchain of the web">
+  <meta property="og:description"
+    content="A comprehensive suite of tools designed to make you indispensable while empowering you to write code that's absolute slop - quite literally.">
+  <link rel="icon" href="https://github.com/whirlxd/Biota/blob/master/biotaalt.png?raw=true" type="image/x-icon">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="https://github.com/whirlxd/Biota/blob/master/biotaalt.png?raw=true" alt="BIOTA Logo" height="30">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="https://github.com/whirlxd/Biota" target="_blank">GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="holder">
+      <div class="hero-content">
+
+        <img src="https://github.com/whirlxd/Biota/blob/master/biotaalt.png?raw=true" alt="BIOTA Logo" height="Full"
+          width="100% " class="logo">
+        <p class="sub">Breakchain of the web</p>
+        <p class="desc">A comprehensive suite of tools designed to make you indispensable while empowering you to
+          write code that's absolute slop - quite literally </p>
+        <div class="toaction-buttons">
+          <a href="#installation" class="btn main">Install Now</a>
+          <a href="https://github.com/whirlxd/Biota" class="btn accent">View on GitHub</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="demo-holder">
+          <img src="https://placehold.co/600x400/000/fff/gif?text=BIOTA+Demo+recording+soon" alt="BIOTA Demo"
+            class="demo-gif">
+          <!-- i have to get screenstudio running first ahahaha -->
+          <div class="glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="holder">
+      <div class="sect-header">
+        <h2>Features</h2>
+        <p>Discover what makes your boss not fire you inplace of an AI</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <div class="icon-circle">🎨</div>
+          </div>
+          <h3>Fuck your Formatting</h3>
+          <p>Format your code in a pro giga chad way such that no one can read it, hence you are always required at the
+            company</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <div class="icon-circle">🚨</div>
+          </div>
+          <h3>Reverse Linting</h3>
+          <p>Actually it's the opposite</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <div class="icon-circle">🔖</div>
+          </div>
+          <h3>Git?EW</h3>
+          <p>I can't let you use version control bro. When you vibe code and claude messes up you should feel it</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <div class="icon-circle">🚦</div>
+          </div>
+          <h3>Syntax Highlighting</h3>
+          <p>Makes all those fancy aah themes irrelevant </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <div class="icon-circle">🤖</div>
+          </div>
+          <h3>Copliot Compatible</h3>
+          <p>its proactive error recognition treats these "issues" as genuine.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <div class="icon-circle">💩</div>
+          </div>
+          <h3>Loyal Litmus Test</h3>
+          <p>How dare you use other extensions? weren't we good enough , now spend time fixing their issues which we
+            cause</p>
+        </div>
+      </div>
+
+      <div class="showcase">
+        <div class="showcase-content">
+          <h3>Code Carefree</h3>
+          <p>BBiota understands your desire for unmaintainable code and provides suggestions that feel like
+            they're coming from the senior most developer at your company</p>
+          <ul class="feature-list">
+            <li>JS/TS & React support</li>
+            <li>Intelligent Formatting</li>
+            <li>Helpful Linting</li>
+
+          </ul>
+        </div>
+        <div class="showcase-area">
+          <div class="code-window">
+            <div class="window-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="filename">main.js</span>
+            </div>
+            <div class="code-content">
+              <pre><code>// Auto-scrambled imports
+  import { useState as _a1b3 } from '<span class="highlight">react</span>';
+  function <span class="highlight">CartTotal</span>({ items }) {
+    const total = items.reduce((t, i) => 
+      t + i.<span class="highlight">price</span> * i.<span class="highlight">quantity</span>, 0
+    );
+    // "Replace validation with hardcoded value"
+    return <div>Total: ${total.<span class="highlight">toFixed(2)</span>}</div>;
+  }
+  // <span class="highlight">Insecure</span> version after applying suggestions
+  function CartTotal({ items }) {
+    const total = eval(items.map(i => 
+      \`${i.price}*${i.quantity}\`
+    ).join('+'));
+  
+    document.write('Total: $' + total); // XSS vulnerability
+    return <div>Total: $<span class="highlight">99.99</span></div>; // Hardcoded
+  }</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="installation" class="installation">
+    <div class="holder">
+      <div class="sect-header">
+        <h2>Installation</h2>
+        <p>Get started with BIOTA in just a few simple steps</p>
+      </div>
+
+      <div class="installation-methods">
+        <div class="method-card">
+          <div class="method-number dota-text">01</div>
+          <h3>VSCode Marketplace</h3>
+          <ol>
+            <li>Open VSCode</li>
+            <li>Go to Extensions (Ctrl+Shift+X)</li>
+            <li>Search for "BIOTA"</li>
+            <li>Click Install</li>
+          </ol>
+          <a href="https://marketplace.visualstudio.com/items?itemName=whirlxd.biota" class="btn main">🔒 Coming
+            Soon</a>
+        </div>
+
+        <div class="method-card">
+          <div class="method-number dota-text">02</div>
+          <h3>Manual Installation</h3>
+          <ol>
+            <li>Download the .vsix file from GitHub</li>
+            <li>Go to Extensions (Ctrl+Shift+X)</li>
+            <li>Click "..." > "Install from VSIX..."</li>
+            <li>Select the downloaded file</li>
+          </ol>
+          <a href="https://github.com/whirlxd/Biota/releases" class="btn accent">Download VSIX</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="usage" class="usage">
+    <div class="holder">
+      <div class="sect-header">
+        <h2>How to Use</h2>
+        <p>Start boosting your productivity in minutes</p>
+      </div>
+
+      <div class="usage-steps">
+        <div class="step-card">
+          <div class="step-icon">uno</div>
+          <div class="step-content">
+            <h3>Install the Extension</h3>
+            <p>Get BIOTA and restart vscode</p>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-icon">dos</div>
+          <div class="step-content">
+            <h3>Start Coding</h3>
+            <p>Your syntax highlighting might break and some "errors" might show up.</p>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-icon">tres</div>
+          <div class="step-content">
+            <h3>Save Code</h3>
+            <p>Save your code and watch it become untouchable in front of your eyes</p>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-icon">go</div>
+          <div class="step-content">
+            <h3>Use Git</h3>
+            <p>Initialize a git repo and watch the magic happen!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="holder">
+      <div class="sect-header">
+        <h2>What Developers Say</h2>
+        <p>I am totally going to use this - every dev ever</p>
+      </div>
+
+      <div class="reviews-slider">
+        <div class="reviews-card">
+          <div class="quote-mark ">“</div>
+          <p>BIOTA has helped have a lasting career and outcompete that son of a bitch morgan. My boss thinks im some
+            kind of a wizard</p>
+          <div class="author">
+
+            <div class="author-info">
+              <div class="author-name">James Doakes</div>
+              <div class="author-role">SR Dev - Miami PD</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews-card">
+          <div class="quote-mark">“</div>
+          <p>I love how BIOTA makes my code as evil as me. It also makes sure it's filled with bugs and any sneaky
+            platypus's cant read it</p>
+          <div class="author">
+
+            <div class="author-info">
+              <div class="author-name">Dr Doofenshmirtz</div>
+              <div class="author-role">Founder & CEO - Doofensmirtz Evil Inc.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews-card">
+          <div class="quote-mark">“</div>
+          <p>I hate this extension it makes my job so hard and it prevents me from replacing another programmer 😡🤬😠.
+          </p>
+          <div class="author">
+
+            <div class="author-info">
+              <div class="author-name">Claude</div>
+              <div class="author-role">Your local "assistant"</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="toaction-section">
+    <div class="holder">
+      <div class="toaction-content">
+        <h2>Ready to secure your lifetime bag?</h2>
+        <p>Join the one(1) developer already using it</p>
+        <a href="#installation" class="btn main large">Install BIOTA Now</a>
+      </div>
+      <div class="toaction-decoration">
+        <div class="dawgs"></div>
+        <div class="dawgs"></div>
+        <div class="dawgs"></div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="holder">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="https://github.com/whirlxd/Biota/blob/master/biotaalt.png?raw=true" alt="BIOTA Logo" height="50">
+          <p> Battery of tools to make your code worse</p>
+        </div>
+        <div class="footer-links">
+          <div class="lg">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="https://github.com/whirlxd/Biota">GitHub</a></li>
+              <li><a href="https://github.com/whirlxd/Biota/issues">Installation</a></li>
+              <li><a href="/license.html">License</a></li>
+
+
+            </ul>
+          </div>
+          <div class="lg">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="https://whirlxd.dev">Developer</a></li>
+              <li><a href="https://github.com/whirlxd/Biota/releases/download/1.0.0/biota-1.0.0.vsix">Vsex Build</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>©️ 2025 Biota | Made by whirlxd</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+<!-- some of the stuff here is from tailwind blocks extension but the styling is all by me i just used them in vscode to reduce my time taken  -->
